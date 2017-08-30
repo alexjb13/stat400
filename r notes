@@ -1,2 +1,14 @@
 ##this is where you should out your r notes.
 
+
+
+nloop=10000
+dhats= 1:nloop
+for(iloop in 1:nloop){
+s1=sample(1:800,10)
+s2=sample(801:1000,10)
+dhat[iloop]=sum(y(s1)+y(s2))/20*1000
+}
+
+hist(dhat,cex.lab=3,cex.axis=3)
+
